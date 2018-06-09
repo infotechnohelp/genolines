@@ -181,7 +181,7 @@ protected $options = []; self_returning:false
             .setInputLines(input)
             .setGlobalVariable('firstToUpperClassName', 'class', {
                 after: 'class ',
-                before: [' ']
+                before: [' ', ';']
             }, ['firstToUpper'])
             .setGlobalVariable('selfReturning', 'SelfReturning', {
                 after: 'SelfReturning:',
